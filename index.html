@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Climate+Crisis">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Weather It?</h1>
+        </div>
+        <div class="search">
+            <input type="text" spellcheck="false" id="location" placeholder="What's your city dawg?">
+            <button><img src="/images/search.png" alt="search icon" width="15px" height="15px"></button>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+        </div>
+        <div id="weathers">
+            <div class="weather-container">
+                <img id="weather-icon">
+                <h2 id="temp"></h2>
+                <h2 class="city"> </h2>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="/images/humidity.png">
+                    <div>
+                        <p id="humidity"></p>
+                        <p id="col2">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/images/wind.png">
+                    <div>
+                        <p id="speed"></p>
+                        <p id="col2">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
